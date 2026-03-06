@@ -57,7 +57,14 @@ const App = () => {
   );
 
   return (
-    <div className="min-h-screen bg-[#f4faf5] flex flex-col items-center justify-center p-4 relative overflow-hidden font-sans">
+    <div className="min-h-screen bg-[#f4faf5] flex flex-col items-center justify-center p-4 relative overflow-hidden" 
+         style={{ fontFamily: "'Be Vietnam Pro', sans-serif" }}>
+      
+      {/* Import Google Font trực tiếp */}
+      <style>
+        {`@import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,300;0,400;0,700;0,900;1,400&display=swap');`}
+      </style>
+
       {/* Background Decor */}
       <div className="absolute top-0 left-0 w-full h-full opacity-40 pointer-events-none">
         <div className="absolute top-[10%] left-[5%] animate-pulse"><BookOpen className="text-green-300" size={40} /></div>
@@ -72,7 +79,7 @@ const App = () => {
             <Timer size={18} className="animate-spin-slow" />
             <span>CHIẾN DỊCH VƯỢT VŨ MÔN 2026</span>
           </div>
-          <h1 className="text-4xl md:text-6xl font-black text-green-900 mb-4">
+          <h1 className="text-4xl md:text-6xl font-black text-green-900 mb-4 tracking-tight">
             Đếm Ngược <span className="text-emerald-600">Thi Vào 10</span>
           </h1>
           <div className="flex items-center justify-center gap-2 text-slate-600 font-medium">
